@@ -24,5 +24,5 @@ block content
           td
             a.btn-view(href=`/contacts/${contact.id}`) View
             a.btn-edit(href=`/contacts/${contact.id}/edit`) Edit
-            form(method='POST' action=`/contacts/${contact.id}/delete`)
+            form(method='GET' action=`/contacts/${contact.id}/delete`)
               button.btn-delete(type='submit') Delete

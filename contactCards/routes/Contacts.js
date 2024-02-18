@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const contactsRepo = require('../src/contactsFileRepository');
+const crypto = require('crypto');
+
 
 /* GET contacts listing. */
 router.get('/', function(req, res, next) {

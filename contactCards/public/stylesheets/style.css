@@ -138,5 +138,141 @@ button.btn-delete {
 }
 
 
+/* Styles for Confirm Delete Page */
+.confirm-delete-container h1 {
+  text-align: center;
+}
+
+.confirm-delete-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.confirm-delete-container div {
+  margin-bottom: 10px;
+}
+
+.confirm-delete-container label {
+  font-weight: bold;
+}
+
+.confirm-delete-container span {
+  margin-left: 10px;
+}
+
+.confirm-delete-container form {
+  text-align: center;
+}
+
+.confirm-delete-container form button[type='submit'],
+.confirm-delete-container form a {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red color for Confirm Delete button */
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-delete-container form button[type='submit']:hover,
+.confirm-delete-container form a:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+/* Styles for Contact Details Page */
+./* Styles for Contact Details Page */
+.contact-details-container .container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-details-container .container table.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-details-container .container table.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-details-container .container table.table td:first-child {
+  font-weight: bold;
+}
+
+.contact-details-container .container form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-details-container .container button.btn-delete,
+.contact-details-container .container a.btn-edit {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-details-container .container button.btn-delete:hover,
+.contact-details-container .container a.btn-edit:hover {
+  background-color: #0056b3;
+}
 
 
+/* Styles for Edit Contact Page */
+.edit-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-container form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.edit-container form div {
+  margin-bottom: 15px;
+}
+
+.edit-container form label {
+  display: block;
+  font-weight: bold;
+}
+
+.edit-container form input[type='text'],
+.edit-container form input[type='email'],
+.edit-container form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.edit-container form button[type='submit'],
+.edit-container form a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-container form button[type='submit']:hover,
+.edit-container form a:hover {
+  background-color: #0056b3;
+}
+
+.edit-container .redtext {
+  color: red;
+}
