@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 All Contacts
+  a(href='/contacts/add') Add Contact
+  table
+    thead
+      tr
+        th First Name
+        th Last Name
+        th Email Address
+        th Actions
+    tbody
+      each contact in contacts
+        tr
+          td= contact.firstName
+          td= contact.lastName
+          td= contact.emailAddress ? contact.emailAddress : 'N/A'
+          td
+            a(href=`/contacts/${contact.id}`) View
+            | 
+            a(href=`/contacts/${contact.id}/edit`) Edit
+            | 
+            form(method='POST' action=`/contacts/${contact.id}/delete`)
+              button(type='submit') Delete
