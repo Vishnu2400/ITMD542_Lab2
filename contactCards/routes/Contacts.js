@@ -20,7 +20,7 @@ router.post('/add', function(req, res, next) {
     res.render('createContact', { title: 'Add a Contact', msg: 'First Name and Last Name are required.' });
   } else {
     const newContact = {
-      id: generateUniqueId(), // This function should generate a unique ID for the contact
+      id: crypto.randomUUID(), // This function should generate a unique ID for the contact
       firstName: firstName,
       lastName: lastName,
       emailAddress: emailAddress || '',
@@ -81,9 +81,6 @@ router.post('/:id/edit', function(req, res, next) {
   }
 });
 
-/* Function to generate unique ID (example implementation) */
-function generateUniqueId() {
-  return Math.random().toString(36).substr(2, 9); // Example, you might want a more robust ID generation method
-}
+
 
 module.exports = router;

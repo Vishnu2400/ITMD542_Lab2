@@ -1,10 +1,8 @@
 extends layout
 
 block content
-  h1= title
-  p Use the form below to edit this contact.
-  hr
-  if msg 
+  h1 Edit Contact
+  if msg
     p(class='redtext')= msg
   form(method='POST' action=`/contacts/${contact.id}/edit`)
     div

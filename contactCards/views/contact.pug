@@ -1,30 +1,32 @@
 extends layout
 
 block content
-  h1 Contact Details
-  if contact
-    div
-      label(for='firstName') First Name:
-      span= contact.firstName
-    div
-      label(for='lastName') Last Name:
-      span= contact.lastName
-    div
-      label(for='emailAddress') Email Address:
-      span= contact.emailAddress ? contact.emailAddress : 'N/A'
-    div
-      label(for='notes') Notes:
-      span= contact.notes ? contact.notes : 'N/A'
-    div
-      label(for='createdDateTime') Created Date/Time:
-      span= contact.createdDateTime
-    div
-      label(for='lastEditedDateTime') Last Edited Date/Time:
-      span= contact.lastEditedDateTime
-    div
-      a(href=`/contacts/${contact.id}/edit`) Edit
-      | 
-      form(method='POST' action=`/contacts/${contact.id}/delete`)
-        button(type='submit') Delete
-  else
-    p Contact not found.
+  .container
+    h1 Contact Details
+    if contact
+      .row
+        .col-sm-6
+          div.form-group
+            label(for='firstName') First Name:
+            span.form-control= contact.firstName
+          div.form-group
+            label(for='lastName') Last Name:
+            span.form-control= contact.lastName
+          div.form-group
+            label(for='emailAddress') Email Address:
+            span.form-control= contact.emailAddress ? contact.emailAddress : 'N/A'
+          div.form-group
+            label(for='notes') Notes:
+            span.form-control= contact.notes ? contact.notes : 'N/A'
+          div.form-group
+            label(for='createdDateTime') Created Date/Time:
+            span.form-control= contact.createdDateTime
+          div.form-group
+            label(for='lastEditedDateTime') Last Edited Date/Time:
+            span.form-control= contact.lastEditedDateTime
+        .col-sm-6
+          form(action=`/contacts/${contact.id}/delete` method='POST')
+            button.btn.btn-danger(type='submit') Delete
+          a.btn.btn-primary(href=`/contacts/${contact.id}/edit`) Edit
+    else
+      p Contact not found.

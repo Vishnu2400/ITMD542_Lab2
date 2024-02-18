@@ -2,7 +2,12 @@ extends layout
 
 block content
   h1 All Contacts
-  a(href='/contacts/add') Add Contact
+  a.btn-link(href='/contacts/add') Add Contact
+
+  br
+  br
+  hr
+
   table
     thead
       tr
@@ -17,9 +22,7 @@ block content
           td= contact.lastName
           td= contact.emailAddress ? contact.emailAddress : 'N/A'
           td
-            a(href=`/contacts/${contact.id}`) View
-            | 
-            a(href=`/contacts/${contact.id}/edit`) Edit
-            | 
+            a.btn-view(href=`/contacts/${contact.id}`) View
+            a.btn-edit(href=`/contacts/${contact.id}/edit`) Edit
             form(method='POST' action=`/contacts/${contact.id}/delete`)
-              button(type='submit') Delete
+              button.btn-delete(type='submit') Delete
