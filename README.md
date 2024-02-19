@@ -3,28 +3,28 @@ ITMD-542_LAB-2
  vlingampal@hawk.iit.edu
 
 Git Repository Name: ITMD542_Lab2
-Git Repository URL: <a href="https://github.com/Vishnu2400/ITMD542_Lab2">
+Git Repository URL: https://github.com/Vishnu2400/ITMD542_Lab2
 
-                                                  ABOUT THE PROJECT:
+ABOUT THE PROJECT:
 
 This project is a contact management system developed using Express.js and Node.js. Users can perform CRUD operations (Create, Read, Update, Delete) on contacts. The application utilizes a JSON file as a repository for storing contact details.
 
  DEVELOPMENT ENVIRONMENT:
   
-   Operating System: Windows 10
-   Node.js Version: 14.17.0
-   Editors Used: Visual Studio Code
+Operating System: Windows 10
+Node.js Version: 14.17.0
+Editors Used: Visual Studio Code
 
-          INSTALLATION/RUNNING INSTRUCTIONS:
+INSTALLATION/RUNNING INSTRUCTIONS:
 
-                            1. Clone the repository from [Git Repository URL].
-                            2. Open the project directory in your terminal.
-                            3. Run `npm install` to install dependencies.
-                            4. Run `npm install uuid` to install UUID dependency.
-                            5. Start the application by running `npm start`.
-                            6. Access the application in your web browser at http://localhost:3000.
+ Clone the repository from [Git Repository URL].
+ Open the project directory in your terminal.
+ Run `npm install` to install dependencies.
+ Run `npm install uuid` to install UUID dependency.
+ Start the application by running `npm start`.
+ Access the application in your web browser at http://localhost:3000.
 
-                                                Insights and Results:
+ Insights and Results:
 
 - Gained proficiency in building a CRUD application using Node.js and Express.
 - Overcame challenges related to managing dynamic routes and handling URL parameters.
